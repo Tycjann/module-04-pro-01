@@ -14,7 +14,9 @@ body {
 .container {
   max-width: 940px;
   padding: 0 20px;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .row::before,
