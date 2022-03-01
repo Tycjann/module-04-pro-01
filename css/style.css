@@ -48,6 +48,9 @@ p.h2-subtitle {
           justify-content: center;
   margin-right: -18px;
   margin-left: -18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .row::before, .row::after {
@@ -269,5 +272,50 @@ p.h2-subtitle {
   font-style: italic;
   color: #777777;
   font-size: 14px;
+}
+
+footer .row {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+footer .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .icons ul {
+  padding-left: 0;
+}
+
+footer .icons li {
+  display: inline;
+  font-size: 0px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+footer .icons li i {
+  background-color: #000;
+  color: #ffffff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+footer .icons li i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
