@@ -301,3 +301,48 @@ footer {
         }
     }
 }
+
+// Media
+// @media (min-width: 768px) and (max-width: 991px) {
+// @media (max-width: 767px) {
+@media (max-width: 991px) {
+    .col {
+        &-m-6 {
+            flex: 0 0 50% !important;
+            max-width: 50% !important;
+        }
+
+        &-m-12 {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+
+    .header-wrapper {
+        header {
+            .splash-iner {
+                p {
+                    &.page-title {
+                        font-size: 30px;
+                    }
+
+                    &.page-subtitle {
+                        font-size: 40px;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        .elements {
+            p {
+                margin: 7px 0 30px 0;
+                padding: 0 30px;
+            }
+    
+        }
+    
+    }
+}
