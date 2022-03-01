@@ -6,6 +6,8 @@ $color-02: #eff2f5;
 $color-03: #fed136;
 $color-04: #222222;
 $color-05: #777777;
+$color-06: #f7f7f7;
+$color-07: #ffffff;
 
 $font-family-01: 'Roboto', sans-serif;
 $font-family-02: 'Aref Ruqaa', serif;
@@ -49,8 +51,8 @@ p.h2-subtitle {
 
 .container {
     max-width: $max-width;
-    padding:  20px;
-    margin: 90px auto;
+    padding: 90px 20px;
+    margin: auto;
     // display: flex;
 }
 
@@ -58,6 +60,8 @@ p.h2-subtitle {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: -18px;
+    margin-left: -18px;
 
     &::before,
     &::after {
@@ -67,12 +71,17 @@ p.h2-subtitle {
     }
 
     .col {
-        padding: 0px;
+            text-align: center;
+            padding-right: 18px;
+            padding-left: 18px;
+        
         &-4 {
-            flex: 0 0 33.333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
         }
         &-12 {
             flex: 0 0 100%;
+            max-width: 100%;
         }
     }
 }
@@ -188,12 +197,6 @@ p.h2-subtitle {
 
 // Services
 .services {
-
-    .col {
-        padding: 0 20px;
-        text-align: center;
-    }
-
     .elements {
         p {
             color: #777777;
@@ -214,4 +217,45 @@ p.h2-subtitle {
         }
     }
 
+}
+
+// Portfolio
+.portfolio {
+    background-color: $color-06;
+
+    .row {
+        row-gap: 40px;
+    }
+
+    .elements {
+        .box {
+            background: $color-07;
+            display: flex;
+            flex-direction: column;
+            word-wrap: break-word;
+
+            .box-iner {
+                padding: 30px 10px;
+
+                p {
+                    margin: 0;
+                    line-height: 1.2;
+                    &.title {
+                        font-family: $font-family-04;
+                        font-weight: 700;
+                        font-size: 17px;
+                    }
+                    &.sub-title {
+                        font-family: $font-family-04;
+                        font-style: italic;
+                        color: $color-05;
+                        font-size: 14px;
+                    }
+                }
+
+
+
+            }
+        }
+    }
 }
